@@ -1,0 +1,29 @@
+- **서버 ( Server )**: 서비스를 제공하는 컴 ( HW ) or 프 ( SW )
+- **클라이언트 ( Client )** : 서비스를 제공받는 컴 ( HW ) or 프 ( SW ) or 사람
+- **요청 ( Request )**: 서비스를 요청하는 행위
+- **응답 ( Response )**: 서비스를 제공하는 행위
+- **네트워크 ( Network )**: 일을 위한 그물망( 통신망 )
+- **아이피 ( IP )**: 주소(ex 아파트 동)
+- **포트 ( Port )**: 서비스 통로 (ex 아파트 호) (참고: 66536ro, 0~1023: well-known port )
+- **방화벽 ( Fire wall )**: 내부 네트워크와 외부 네트워크의 데이터 교환을 필터링 함( HW / SW)
+- **URI ( Uniform Resource Identifier )**: 네트워크 자원의 식별자
+- **URL ( Uniform Resource Locator)**: 네트워크 자원의 위치
+- **URN ( Uniform Resource Name )**: 네트워크 자원의 이름
+- **게이트웨이 ( Gateway )**: 각 네트워크 마다의 출입문 (ex 10.41.0.1)
+- **라우터 ( Router ) / 라우터스위치**: 외부 네트워크로 가는 데이터 패킷의 방향타 역할 HW
+- **프록시 ( proxy )**: 검열, 임시저장, 
+- **LAN ( Local Area Network )**: 근거리 네트워크
+- **WAN ( Wide Area Network )**: 원거리 네트워크
+- **www( World Wide Web )**: 인터넷
+- **인터넷**: 전세계적인 네트워크 망
+- **패킷 ( Packet )**: 네트워크로 가는 데이터의 전송 단위
+- **소켓 ( Socket )**: 데이터의 'SW통로'
+- **프로토콜( Protocol )**: 통신규약( ex http, smtp, ftp, ...)
+- **TCP ( Transmission Control Protocol )**: 연결지향 프로토콜
+- **UDP ( User Datagram Protocol )**: 비연결지향 프로토콜 ( 비유: 전화, 편지, 비신뢰성+비실시간)
+- **VPN ( Virtual Private Network )**: 암호화된 개인 터널을 생성할 수 있는 가상 사설 네트워크
+  ( VPN을 사용하면 공용IP주소와 위치 정보를 숨겨서 요청 가능 )
+- **MAC ( Media Access Control ) Address**: 무선랜 / 유선랜 카드의 물리적인 주소 ( ex  8C-B0-E9-CE-26-E7)
+- **DNS ( Domain Name Server )**: IP와 domain을 매핑해주는 서버
+  www.naver.com -> 223.130.200.219
+- **OSI 7Layer**: 
