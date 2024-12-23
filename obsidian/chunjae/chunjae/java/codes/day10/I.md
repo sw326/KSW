@@ -1,4 +1,0 @@
-class I {
-    class IInner{
-    }
-} 
