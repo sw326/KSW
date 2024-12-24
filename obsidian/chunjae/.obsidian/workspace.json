@@ -27,22 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chunjae/java/notes/advenced/day04.md",
+                "file": "chunjae/java/mission/Network 용어 선생님 정의.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day04"
-            }
-          },
-          {
-            "id": "b4f62889d84619dd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Network 용어 선생님 정의"
             }
           }
         ],
@@ -190,43 +180,43 @@
   },
   "active": "a97cea0fb587757b",
   "lastOpenFiles": [
-    "chunjae/java/mission/Network 용어 정의.md",
+    "chunjae/java/notes/advenced/day05.md",
+    "chunjae/java/notes/advanced/day02.md",
+    "chunjae/java/notes/advanced/day01.md",
+    "chunjae/java/notes/advanced/day05.md",
+    "chunjae/java/notes/advanced/day04.md",
+    "chunjae/java/notes/advanced/day03.md",
+    "chunjae/java/notes/advanced",
     "chunjae/java/notes/advenced/day04.md",
     "chunjae/java/notes/advenced/day03.md",
-    "chunjae/선배님 방문/이영섭.md",
-    "chunjae/선배님 방문/우해인.md",
-    "chunjae/java/notes/beginning/day10.md",
-    "chunjae/java/notes/beginning/day11.md",
-    "chunjae/java/notes/beginning/day12.md",
-    "chunjae/java/notes/beginning/day13.md",
-    "chunjae/java/mission/Network 용어 선생님 정의.md",
     "chunjae/java/notes/advenced/day02.md",
-    "Mermaid.md",
-    "Untitled.md",
-    "chunjae/java/mission",
     "chunjae/java/notes/advenced/day01.md",
+    "chunjae/java/notes/beginning/day13.md",
+    "chunjae/java/notes/beginning/day12.md",
+    "chunjae/java/notes/beginning/day11.md",
+    "chunjae/java/notes/beginning/day10.md",
+    "chunjae/java/notes/beginning/day09.md",
+    "chunjae/java/notes/beginning/day08.md",
+    "chunjae/java/notes/beginning/day07.md",
+    "chunjae/java/notes/beginning/day06.md",
+    "chunjae/java/notes/beginning/day05.md",
+    "chunjae/java/notes/beginning/day04.md",
+    "chunjae/java/notes/beginning/day03.md",
+    "chunjae/java/notes/beginning/day02.md",
     "chunjae/java/notes/beginning/day01.md",
+    "chunjae/java/mission/Network 용어 선생님 정의.md",
+    "chunjae/java/mission/Network 용어 정의.md",
+    "chunjae/java/mission/퀴즈 용어정리.md",
+    "chunjae/java/mission",
     "chunjae/java/notes/advenced",
     "chunjae/java/notes/beginning",
-    "chunjae/java/ㅠ.md",
-    "chunjae/java/notes/beginning/day02.md",
     "Pasted image 20241218103230.png",
     "chunjae/Untitled",
     "Pasted image 20241216141248.png",
-    "chunjae/java/codes/day01/B.md",
-    "chunjae/java/codes/day07/C2.md",
-    "chunjae/java/codes/day07/C.md",
-    "chunjae/java/codes/day07/Boxing.md",
-    "chunjae/java/codes/day07/B4.md",
-    "chunjae/java/codes/day07/B2.md",
-    "chunjae/java/codes/day07/B.md",
-    "chunjae/java/codes/day07/ArrayT.md",
-    "chunjae/java/codes/day07/A4.md",
     "chunjae/java/codes/day09/C.java",
     "chunjae/java/codes/day09/A.java",
     "chunjae/java/codes/day09/B.java",
     "chunjae/java/codes/day09",
-    "chunjae/java/codes/day08/D.java",
-    "chunjae/java/codes/day08/Human.java"
+    "chunjae/java/codes/day08/D.java"
   ]
 }

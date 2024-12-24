@@ -16,7 +16,7 @@
 	(3) Editer
 		- Editplus
 		- Eclipse
-		- IntellJ
+		- IntelliJ
 		- VSCode 
 	(4) API(Application Programming Interface)
 		- jdk-17.0.13_doc-all.zip 압축해제 후 즐겨찾기
