@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chunjae/java/mission/Network 용어 정의.md",
+                "file": "chunjae/java/notes/advenced/day04.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Network 용어 정의"
+              "title": "day04"
             }
           },
           {
@@ -190,6 +190,7 @@
   },
   "active": "a97cea0fb587757b",
   "lastOpenFiles": [
+    "chunjae/java/mission/Network 용어 정의.md",
     "chunjae/java/notes/advenced/day04.md",
     "chunjae/java/notes/advenced/day03.md",
     "chunjae/선배님 방문/이영섭.md",
@@ -199,7 +200,6 @@
     "chunjae/java/notes/beginning/day12.md",
     "chunjae/java/notes/beginning/day13.md",
     "chunjae/java/mission/Network 용어 선생님 정의.md",
-    "chunjae/java/mission/Network 용어 정의.md",
     "chunjae/java/notes/advenced/day02.md",
     "Mermaid.md",
     "Untitled.md",
