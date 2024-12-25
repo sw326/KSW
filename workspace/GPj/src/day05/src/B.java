@@ -3,6 +3,7 @@ package day05.src;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.*;
 import java.net.URL;
 import javax.swing.*;
 
@@ -53,23 +54,41 @@ class ChooseHandler implements ActionListener{
 		this.b = b;
 	}
 	
-	void open() {
-		System.out.println("open");
+	void open(JFileChooser fileChooser) {
+		//System.out.println("open");
+		int fCheck = fileChooser.showOpenDialog(b.c);
+		if(fCheck == JFileChooser.APPROVE_OPTION) {
+			try (Reader r = new FileReader(fileChooser.getSelectedFile())){
+				b.tp.read(r, null);
+			}catch(FileNotFoundException fnfe) {
+				fnfe.printStackTrace();
+			}catch(IOException ie) {
+			}finally {}
+		}
 	}
 	
-	void save() {
-		System.out.println("save");
+	void save(JFileChooser fileChooser) {
+		//System.out.println("save");
+		int fCheck = fileChooser.showSaveDialog(b.c);
+		if(fCheck==JFileChooser.APPROVE_OPTION) {
+			try {
+				BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileChooser.getSelectedFile().getPath()),"utf-8"));
+				bw.write(b.tp.getText(),0,(b.tp.getText().length()));
+				bw.flush();
+			}catch(IOException ie) {
+				ie.printStackTrace();
+			}
+		}
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		Object obj = e.getSource();
-		//JFileChooser fileChooser = new JFileChooser();
+		JFileChooser fileChooser = new JFileChooser();
 		if(obj==b.opn) {
-			JFileChooser fileChooser = new JFileChooser();
-			open();
+			open(fileChooser);
 		}else {
-			save();
+			save(fileChooser);
 		}
 		
 		
