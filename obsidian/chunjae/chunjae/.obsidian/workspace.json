@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "8f106574b70f7bbb",
+    "id": "69378216b4f35641",
     "type": "split",
     "children": [
       {
-        "id": "fe38a99f921db3b5",
+        "id": "bee159c55e4c075b",
         "type": "tabs",
         "children": [
           {
-            "id": "a97cea0fb587757b",
+            "id": "bf5b1398928f249e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chunjae/java/notes/advanced/Day06.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Day06"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a9bf973e355e31ff",
+    "id": "337cc7bc7a4d643f",
     "type": "split",
     "children": [
       {
-        "id": "e2f8334eb8074bcc",
+        "id": "20ee6997be01744b",
         "type": "tabs",
         "children": [
           {
-            "id": "cc64a4a86c69be14",
+            "id": "5bc4b3b0fb37fe21",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +43,7 @@
             }
           },
           {
-            "id": "b6eb7a13569cb91f",
+            "id": "67347291949d896b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,7 +60,7 @@
             }
           },
           {
-            "id": "89943b1ba3a23267",
+            "id": "5492e06563b55e2e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,23 +73,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "a177da71b770b94f",
+    "id": "d4c48c4d2a6ab31b",
     "type": "split",
     "children": [
       {
-        "id": "aba39aae72da298a",
+        "id": "5296024a25dbd142",
         "type": "tabs",
         "children": [
           {
-            "id": "0c7ded1981f6ccd9",
+            "id": "0eabd1ae78f23354",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chunjae/java/day01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,25 +98,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for day01"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "3dad40b4ff92f60a",
+            "id": "ed0b6e2386b3ced9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "chunjae/java/day01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from day01"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "10eab6d5d87dfabf",
+            "id": "a636a9bd51b9a181",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,15 +128,13 @@
             }
           },
           {
-            "id": "9a4b191cda453238",
+            "id": "51d75b89586fbb67",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "chunjae/java/day01.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of day01"
+              "title": "Outline"
             }
           }
         ]
@@ -162,45 +154,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a97cea0fb587757b",
-  "lastOpenFiles": [
-    "chunjae/java/notes/advanced/day05.md",
-    "chunjae/java/notes/advanced/Day06.md",
-    "chunjae/java/notes/beginning/day10.md",
-    "chunjae/java/notes/beginning/day09.md",
-    "chunjae/java/notes/beginning/day13.md",
-    "chunjae/java/notes/beginning/day12.md",
-    "chunjae/java/notes/beginning/day04.md",
-    "chunjae/java/notes/beginning/day03.md",
-    "chunjae/java/notes/beginning/day02.md",
-    "chunjae/java/notes/beginning/day11.md",
-    "chunjae/java/notes/beginning/day01.md",
-    "chunjae/java/mission/Network 용어 선생님 정의.md",
-    "chunjae/java/notes/advenced/day05.md",
-    "chunjae/java/notes/advanced/day02.md",
-    "chunjae/java/notes/advanced/day01.md",
-    "chunjae/java/notes/advanced/day04.md",
-    "chunjae/java/notes/advanced/day03.md",
-    "chunjae/java/notes/advanced",
-    "chunjae/java/notes/advenced/day04.md",
-    "chunjae/java/notes/advenced/day03.md",
-    "chunjae/java/notes/advenced/day02.md",
-    "chunjae/java/notes/advenced/day01.md",
-    "chunjae/java/notes/beginning/day08.md",
-    "chunjae/java/notes/beginning/day07.md",
-    "chunjae/java/notes/beginning/day06.md",
-    "chunjae/java/notes/beginning/day05.md",
-    "chunjae/java/mission/Network 용어 정의.md",
-    "chunjae/java/mission",
-    "chunjae/java/notes/advenced",
-    "chunjae/java/notes/beginning",
-    "Pasted image 20241218103230.png",
-    "chunjae/Untitled",
-    "Pasted image 20241216141248.png",
-    "chunjae/java/codes/day09/C.java",
-    "chunjae/java/codes/day09/A.java",
-    "chunjae/java/codes/day09/B.java",
-    "chunjae/java/codes/day09",
-    "chunjae/java/codes/day08/D.java"
-  ]
+  "active": "bf5b1398928f249e",
+  "lastOpenFiles": []
 }
