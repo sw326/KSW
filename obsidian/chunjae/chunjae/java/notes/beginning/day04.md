@@ -8,13 +8,13 @@
 	1) 지역(로컬)
 		- 파라미터(매개, 인수, 아규먼츠)
 		- 선언 초기화
-1) 소유
+2) 소유
 	1) 클래스(static == 정적)
 	2) 객체(동적)
-2) final 여부
+3) final 여부
 	1) 변수(Variable)
 	2) 상수(Constant) 
-3) 메모리
+4) 메모리
 	- 기본(primitive) : 8가지
 	  byte(1) > short(2) > int(4) > long(8) > float(4) > double(8)
 			 char(2) >

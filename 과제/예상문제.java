@@ -12,7 +12,7 @@ class Q{
 		System.out.println(x); // x는 10 // x의 값을 출력
 	}
 	void m03(){
-		switch(0){ // switch의 괄호 안에 조건 추가
+		switch(0){ // switch의 괄호 안에 조건 추가. 정수형(byte, short, char, int) & String 타입
 			case 1: System.out.println("1"); break; // case 문 수정
 			case 2: System.out.println("2"); break; // case 문 수정
 			default: System.out.println("3"); // default 문 수정
