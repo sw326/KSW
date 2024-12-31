@@ -36,9 +36,9 @@ class Q{
 	}
 
 	void m06(){ // final 키워드 설명
-		final String str = "상수"; // final 변수 선언
-		final int num = 10; // final 변수 선언
-		final Object obj = new Object(); // final 객체 선언
+		//final 변수 - 재할당 불가, 최기화 필수
+		//final 메서드 - 오버라이드(재정의) 불가 
+		//final 클래스 - 상속 불가
 	}
 	void m078910(){ // 접근 제어자 설명
 	}
