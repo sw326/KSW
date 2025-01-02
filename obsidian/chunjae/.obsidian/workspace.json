@@ -8,6 +8,7 @@
         "type": "tabs",
         "children": [
           {
+<<<<<<< HEAD
             "id": "a97cea0fb587757b",
             "type": "leaf",
             "state": {
@@ -22,17 +23,19 @@
             }
           },
           {
+=======
+>>>>>>> dbb0d45794da818376af351ef4bc6eba0537b770
             "id": "80444c1a73e1adef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chunjae/java/notes/beginning/day11.md",
+                "file": "chunjae/java/notes/beginning/day05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day11"
+              "title": "day05"
             }
           }
         ]
@@ -57,7 +60,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -74,7 +77,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
@@ -168,20 +171,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "a97cea0fb587757b",
+  "active": "80444c1a73e1adef",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "chunjae/Oracle/notes/day02.md",
     "chunjae/Oracle/notes/day03.md",
     "chunjae/java/notes/beginning/day11.md",
+=======
+    "chunjae/java/notes/beginning/day04.md",
+    "chunjae/java/notes/beginning/day03.md",
+>>>>>>> dbb0d45794da818376af351ef4bc6eba0537b770
     "chunjae/java/notes/beginning/day02.md",
+    "chunjae/java/notes/beginning/day01.md",
+    "chunjae/java/notes/beginning/day11.md",
+    "Mermaid.md",
+    "chunjae/Oracle/notes/day02.md",
     "chunjae/java/notes/beginning/day10.md",
     "chunjae/java/notes/beginning/day09.md",
     "chunjae/java/notes/beginning/day08.md",
@@ -191,10 +204,7 @@
     "chunjae/java/notes/beginning/day07.md",
     "chunjae/java/notes/beginning/day06.md",
     "chunjae/java/notes/beginning/day05.md",
-    "chunjae/java/notes/beginning/day04.md",
-    "chunjae/java/notes/beginning/day03.md",
     "chunjae/java/mission/퀴즈 용어정리.md",
-    "chunjae/java/notes/beginning/day01.md",
     "Untitled.canvas",
     "chunjae/java/notes/advanced/day05.md",
     "chunjae/java/notes/beginning/day13.md",
