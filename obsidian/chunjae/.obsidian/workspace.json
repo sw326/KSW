@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chunjae/Oracle/notes/day02.md",
+                "file": "chunjae/Oracle/notes/day03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "day02"
+              "title": "day03"
             }
           },
           {
@@ -178,8 +178,9 @@
   },
   "active": "a97cea0fb587757b",
   "lastOpenFiles": [
-    "chunjae/java/notes/beginning/day11.md",
     "chunjae/Oracle/notes/day02.md",
+    "chunjae/Oracle/notes/day03.md",
+    "chunjae/java/notes/beginning/day11.md",
     "chunjae/java/notes/beginning/day02.md",
     "chunjae/java/notes/beginning/day10.md",
     "chunjae/java/notes/beginning/day09.md",
@@ -207,7 +208,6 @@
     "chunjae/java/notes/advanced",
     "chunjae/java/notes/advenced/day04.md",
     "chunjae/java/notes/advenced/day03.md",
-    "chunjae/java/notes/advenced/day02.md",
     "chunjae/java/mission",
     "chunjae/java/notes/advenced",
     "chunjae/java/notes/beginning",
