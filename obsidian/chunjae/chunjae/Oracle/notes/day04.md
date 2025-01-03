@@ -171,3 +171,41 @@ where SAL<(select AVG(SAL) from EMP where DEPTNO=10)
 group by DEPTNO
 having DEPTNO !=10
 order by DEPTNO desc;
+
+
+
+
+# DML (Data Manipulation Language)
+1) 설명
+   테이블 내의 데이터를 '입력', '수정', '삭제'하는 SQL문
+   
+2) 종류
+	1) insert
+	    insert into DEPT3 values(50, '개발부', '서울');
+	    
+	    insert into EMP3 values(8000, '홍길동', '개발', '7900', SYSDATE, 4000, null, 50); -- FK위배
+	    
+	    insert into EMP3(EMPNO, ENAME, SAL, HIREDATE) values(8000, '이순신', 4500, SYSDATE); -- PK 위배
+	    
+	    insert into EMP3(EMPNO, ENAME, SAL, HIREDATE) values(9000, '이순신', 4500, SYSDATE);
+	    
+	    insert into EMP3(ENAME, SAL, HIREDATE) values('강감찬', 4800, SYSDATE); --PK위배
+	    
+	2) update
+	   update EMP3 set ENAME='김길동', SAL=6000 where EMPNO=8000;
+	   update EMP3 set EMPNO=8001 where EMPNO=8000;
+	   update EMP3 set DEPTNO=10 where EMPNO=8001;
+	   
+	3) delete
+	   delete from EMP3 where EMPNO=9000;
+	   delete from EMP3 where DEPTNO=10;
+	   delete from DEPT3 where DEPTNO=20; -- cascade 여부에 따라 다름
+	   
+	   cf1) cascade 옵션을 이용한 부모 테이블 삭제
+	   drop table <-- 마찬가지로 FK 제약에 걸린다.
+	   
+	   cf2) purge recyclebin;
+
+
+## TCL (Transaction Control Language)
+DML 실행 결과가 DBMS에 '영구 저장'되거나, '되돌리기'위한 SQL

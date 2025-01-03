@@ -8,8 +8,8 @@ create table T1(
    NAME varchar2(10)
 );
 
-insert into T1 values(10, 'í™ê¸¸ë™');
-insert into T1 values(20, 'ì´ìˆœì‹ ');
+insert into T1 values(10, 'È«±æµ¿');
+insert into T1 values(20, 'ÀÌ¼ø½Å');
 
 create table T2(
    NO number(2), 
