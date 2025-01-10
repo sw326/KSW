@@ -1,3 +1,4 @@
+# MariaDB
 
 1. 환경설정
 	1) 다운로드 ( mariadb-10.11.8-winx64.msi )
@@ -96,4 +97,34 @@
 		   MariaDB [java_schema]> show tables; --dept/emp/salgrade/bonus 테이블 생성확인
 		   MariaDB [java_schema]> desc emp; 
 		   MariaDB [java_schema]> desc dept;
-6. 
+		   
+	3) pro2_maria.sql 생성
+		1) pro2.sql을 복사해서 pro2_oracle.sql로 변경
+		   GPT로 오라클 -> 마리아 컨버트 하기
+		   
+		2) 인스톨
+		   MariaDB [java_schema]> source D:\KSW\obsidian\chunjae\chunjae\mariadb\note\code\day01\pro2_maria.sql
+		3) 호출
+		   MariaDB [java_schema]> select * from emp where empno=7839;--SAL: 5000
+		   MariaDB [java_schema]> call INCRE2(7839, 10);
+		   MariaDB [java_schema]> select * from emp where empno=7839;--SAL: 5500
+		4) 
+	1) 
+6. 연동 ( DB <-> JAVA )
+	1) JDBC( Java Database Connectivity ) -- 인터페이스
+		1) 드라이버
+			1. 오라클: ojdbc8.jar
+			2. 마리아: mariadb-java-client-3.4.0.jar
+			   
+	2) 순서
+		1) 드라이버 로딩
+		   set classpath=.;D:\KSW\자료실\ojdbc8.jar
+		2) Connection 생성
+		   ex) mariadb/day01/B.java
+		   
+		3) Statement 생성
+		4) Statement 실행 ( DQL: ResultSet 생성)
+		5) 데이터 추출 ( from ResultSet )
+		6) 연결 객체들 닫기
+		   ex) mariadb/day01/B.java
+	3) 
