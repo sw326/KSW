@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.sql.SQLException;;
 
 public class B {
     String maria = "org.mariadb.jdbc.Driver";
@@ -19,12 +18,12 @@ public class B {
         }
         //createT();
         //dropT();
-        // insertD(10, "홍길동");
-        // insertD(20, "이순신");
-        // insertD(30, "강감찬");
-        // insertD(40, "유관순");
-        //updateD(30, "낙성대");
-        //deleteD(30, "낙성대");
+        insertD(10, "홍길동");
+        insertD(20, "이순신");
+        insertD(30, "강감찬");
+        insertD(40, "유관순");
+        updateD(30, "낙성대");
+        deleteD(30, "낙성대");
         selectD();
 
         closeAll();

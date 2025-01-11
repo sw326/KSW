@@ -45,7 +45,7 @@
 		Enter password: 1234
 		MariaDB [mysql]> create user 'scott'@'localhost' identified by 'tiger';
 		-- (옵션) create user 'scott'@'%' identified by 'tiger';
-		MariaDB [mysql]> use mysql -- MariaBB [mysql]
+		MariaDB [mysql]> use mysql -- MariaDB [mysql]
 		MariaDB [mysql]> select USER, PASSWORD, HOST, PLUGIN from USER;
 		
 	2) 삭제
