@@ -144,6 +144,7 @@
 	
 	ex) /mariadb/day02/E.java  
 	
-9. sad
-	1. 
+9. Transaction
+	1. DML: 1 Transaction (JDBC는 DML이 기본적으로 auto commit되기 때문에)
+	   
 10. 
