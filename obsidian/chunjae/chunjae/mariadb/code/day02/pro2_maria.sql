@@ -1,0 +1,26 @@
+DROP PROCEDURE IF EXISTS INCRE2;
+
+DELIMITER //
+
+CREATE PROCEDURE INCRE2(IN n INT, IN r DECIMAL(10,2))
+BEGIN
+   DECLARE newPay DECIMAL(10,2);
+   
+   SELECT SAL INTO newPay 
+   FROM EMP 
+   WHERE EMPNO = n;
+   
+   SET newPay = newPay + (newPay * r / 100);
+   
+   UPDATE EMP 
+   SET SAL = newPay 
+   WHERE EMPNO = n;
+   
+   COMMIT;
+END //
+
+DELIMITER ;
+
+-- 프로시저 호출
+-- CALL INCRE2(7369, 20);
+-- SELECT EMPNO, SAL FROM ENP WHERE EMPNO = 7369;
