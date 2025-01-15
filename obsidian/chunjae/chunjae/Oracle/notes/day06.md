@@ -12,6 +12,7 @@
 	3) 
 2. Trigger
 	1) 설명
+	   일련의 '작업처리순서'를 정의해 놓은 것으로 미리 DBMS에 컴파일되어져서, 어떤 조건이 만족되어지는 상황('DML수행')이 발생되면, '자동'호출되어져서 작동되는 알고리즘
 	2) create [ or replace ] trigger 트리거명
 	   before | after
 		   [ 동작( inseert, update, delete )] on 테이블명

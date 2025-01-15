@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main - J",
+            "request": "launch",
+            "mainClass": "jdbc.J",
+            "classPaths": [
+                "D:\\KSW\\자료실\\ojdbc8.jar" // JAR 파일 경로 추가
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch Main - 김성우",
+            "request": "launch",
+            "mainClass": "jdbc.김성우",
+            "classPaths": [
+                "D:\\KSW\\자료실\\ojdbc8.jar" // JAR 파일 경로 추가
+            ]
+        }
+    ]
+}

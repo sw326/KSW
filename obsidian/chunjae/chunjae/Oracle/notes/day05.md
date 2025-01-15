@@ -1,5 +1,5 @@
 # TCL ( Transactio Control Language )
--- commit, rollback
+-- commit, rollback, savepoint
 
 1) 설명
    DML(insert, update, delete)실행결과가 DBMS에 '영구저장'되거나, '되돌리기'위한 SQL
