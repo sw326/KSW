@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vscode/설정.md",
+                "file": "FrontEnd/설정.md",
                 "mode": "source",
                 "source": false
               },
@@ -170,10 +170,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d92b1ad5df69d717",
+  "active": "5bc4b3b0fb37fe21",
   "lastOpenFiles": [
-    "vscode",
-    "vscode/설정.md",
+    "FrontEnd",
+    "FrontEnd/설정.md",
     "mission/영상활영 시나리오.md"
   ]
 }
