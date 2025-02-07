@@ -9,3 +9,23 @@ div {
 #ivalue {
   border: 3px solid blue;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+input[type='text'] {
+  color: green;
+}

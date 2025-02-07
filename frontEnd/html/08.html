@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chumji world</title>
+    <style>
+      body {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: white;
+      }
+      header,
+      main,
+      aside,
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        background-color: black;
+        color: white;
+      }
+      aside {
+        background-color: yellow;
+        color: black;
+      }
+      footer {
+        background-color: black;
+        color: white;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas: 'header header' 'main aside' 'footer footer';
+      }
+      header {
+        grid-area: header;
+      }
+      main {
+        grid-area: main;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header (chumji world)</header>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+  </body>
+</html>
