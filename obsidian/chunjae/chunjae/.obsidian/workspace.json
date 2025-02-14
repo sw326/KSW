@@ -8,27 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bf5b1398928f249e",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
-            }
-          },
-          {
             "id": "d92b1ad5df69d717",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrontEnd/CSS.md",
+                "file": "MVC/JSP/EL ( Expression Language ).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSS"
+              "title": "EL ( Expression Language )"
+            }
+          },
+          {
+            "id": "58ddbd1f4d2c9e0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "무제.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "무제"
             }
           }
         ],
@@ -170,11 +174,32 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d92b1ad5df69d717",
+  "active": "58ddbd1f4d2c9e0c",
   "lastOpenFiles": [
-    "블라블라.md",
+    "MVC/JSP/EL ( Expression Language ).md",
+    "무제.md",
+    "MVC/JSP/DBCP 세팅.md",
+    "MVC/무제",
+    "MVC",
+    "MVC/JSP/JSP.md",
+    "java/notes/beginning/day10.md",
+    "java/notes/beginning/day09.md",
+    "java/notes/beginning/day08.md",
+    "java/notes/beginning/day07.md",
+    "java/notes/beginning/day06.md",
+    "java/notes/beginning/day05.md",
+    "java/notes/beginning/day04.md",
+    "java/notes/beginning/day02.md",
+    "java/notes/beginning/day01.md",
+    "java/notes/advanced/day05.md",
+    "java/notes/advanced/day04.md",
+    "java/notes/advanced/day03.md",
+    "java/notes/advanced/day02.md",
+    "java/notes/advanced/day01.md",
     "FrontEnd/CSS.md",
     "FrontEnd/설정.md",
+    "MVC/JSP",
+    "블라블라.md",
     "FrontEnd",
     "mission/영상활영 시나리오.md"
   ]
