@@ -13,30 +13,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MVC/JSP/EL ( Expression Language ).md",
+                "file": "MVC/JSP/DBCP 세팅.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL ( Expression Language )"
+              "title": "DBCP 세팅"
             }
           },
           {
-            "id": "58ddbd1f4d2c9e0c",
+            "id": "8777ce8af9575fbf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "무제.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.8.4"
               },
-              "icon": "lucide-file",
-              "title": "무제"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +56,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -93,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d4c48c4d2a6ab31b",
@@ -109,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MVC/JSP/DBCP 세팅.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for DBCP 세팅"
             }
           },
           {
@@ -127,11 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MVC/JSP/DBCP 세팅.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from DBCP 세팅"
             }
           },
           {
@@ -141,7 +140,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -152,9 +153,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "MVC/JSP/DBCP 세팅.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of DBCP 세팅"
             }
           }
         ]
@@ -166,22 +172,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "58ddbd1f4d2c9e0c",
+  "active": "d92b1ad5df69d717",
   "lastOpenFiles": [
-    "MVC/JSP/EL ( Expression Language ).md",
     "무제.md",
     "MVC/JSP/DBCP 세팅.md",
+    "MVC/JSP/EL ( Expression Language ).md",
+    "FrontEnd/설정.md",
+    "MVC/JSP/JSP.md",
+    "mariadb/note/day01.md",
+    "java/notes/beginning/day01.md",
     "MVC/무제",
     "MVC",
-    "MVC/JSP/JSP.md",
     "java/notes/beginning/day10.md",
     "java/notes/beginning/day09.md",
     "java/notes/beginning/day08.md",
@@ -190,14 +199,12 @@
     "java/notes/beginning/day05.md",
     "java/notes/beginning/day04.md",
     "java/notes/beginning/day02.md",
-    "java/notes/beginning/day01.md",
     "java/notes/advanced/day05.md",
     "java/notes/advanced/day04.md",
     "java/notes/advanced/day03.md",
     "java/notes/advanced/day02.md",
     "java/notes/advanced/day01.md",
     "FrontEnd/CSS.md",
-    "FrontEnd/설정.md",
     "MVC/JSP",
     "블라블라.md",
     "FrontEnd",

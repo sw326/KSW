@@ -19,5 +19,6 @@
 		<a href="board/brd.do">게시판(Model2)</a><br/>
 		<a href="file/file.do?m=form">파일 업로드 폼</a><br/>
 		<a href="file/file.do?m=form_mt">멀티파일 업로드 폼</a><br/>
+		<a href="file/file.do?m=list">파일 리스트</a><br/>
 	</body>
 </html>

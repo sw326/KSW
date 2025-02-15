@@ -1,87 +1,110 @@
 package file.mvc.control;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.*;
+import jakarta.servlet.http.Part;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 
+import file.mvc.fileset.Path;
 import file.mvc.model.FileService;
 
-/**
- * Servlet implementation class FileController
- */
 @WebServlet("/file/file.do")
 @MultipartConfig(
-		fileSizeThreshold = 1024 * 1024 * 10,  // 10MB
-		maxFileSize = 1024 * 1024 * 20,       // 20MB
-		maxRequestSize = 1024 * 1024 * 50     // 50MB
-	)
+	fileSizeThreshold = 1024 * 1024 * 10,  // 10MB
+	maxFileSize = 1024 * 1024 * 20,       // 20MB
+	maxRequestSize = 1024 * 1024 * 50     // 50MB
+)
 public class FileController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+       
+	public void service(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		String m = request.getParameter("m");
-		if(m!=null) {
+		if(m != null) {
 			m = m.trim();
 			switch(m) {
-			case "form": form(request, response); break;
-			case "upload": upload(request, response); break;
-			case "form_mt": form_mt(request, response); break;
-			case "upload_mt": upload_mt(request, response); break;
+				case "form": form(request, response); break;
+				case "upload": upload(request, response); break;
+				case "form_mt": form_mt(request, response); break;
+				case "upload_mt": upload_mt(request, response); break;
+				case "list": list(request, response); break;
+				case "del": del(request, response); break;
 			}
 		}else {
-			
+			list(request, response); 
 		}
 	}
-	private void form(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void form(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		response.sendRedirect("form.jsp");
 	}
-	
-	private void upload(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void upload(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		String name = request.getParameter("name");
 		Part filePart = request.getPart("file");
 		
-		FileService service = FileService.getInstance();
-		boolean flag = service.saveFile(filePart);
-		System.out.println(flag);
+		FileService serivce = FileService.getInstance();
+		boolean flag = serivce.saveFile(filePart);
 		if(flag) {
 			System.out.println("업로드 성공");
 		}else {
 			System.out.println("업로드 실패");
 		}
+			
+		//String contextPath = this.getServletContext().getRealPath("");
+		//System.out.println("contextPath: " + contextPath);
+		//String uploadPath = contextPath + "upload"+File.separator+"tmp";
+		//System.out.println("uploadPath: " + uploadPath);
 		
-//		String contextPath = this.getServletContext().getRealPath("");
-//		System.out.println(contextPath);
-//		String uploadPath = contextPath + "upload" + File.separator + "tmp";
-//		System.out.println(uploadPath);
+		response.sendRedirect("file.do");
 	}
-	
-	private void form_mt(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void form_mt(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		response.sendRedirect("form_mt.jsp");
 	}
-	
-	private void upload_mt(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void upload_mt(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		FileService serivce = FileService.getInstance();
+
 		Collection<Part> col = request.getParts();
-		FileService service = FileService.getInstance();
+		for(Part filePart: col) {
+			boolean flag = serivce.saveFile(filePart);
+			//if(flag) System.out.println("업로드 성공");
+			//else System.out.println("업로드 실패");
+		}
+		System.out.println("모두 업로드 완료");
 		
-		for(Part part:col) {
-			if(part.getSubmittedFileName() != null
-					&& !part.getSubmittedFileName().isEmpty());
-			if(part.getSize() > 0) {
-				boolean flag = service.saveFile(part);
-				if(flag) {
-					System.out.println("업로드 성공");
-				}else {
-					System.out.println("업로드 실패");
-				}				
-			}
-		}		
+		response.sendRedirect("file.do");
+	}
+	private void list(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		String uploadPath = Path.FILE_STORE;
+		File uploadDir = new File(uploadPath);
+		if(!uploadDir.exists()) {
+			uploadDir.mkdirs();
+		}
+		
+		File files[] = uploadDir.listFiles();
+		request.setAttribute("files", files);
+		
+		String view = "list.jsp";
+		RequestDispatcher rd = request.getRequestDispatcher(view);
+		rd.forward(request, response);
+	}
+	private void del(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		String fname = request.getParameter("fname");
+		File f = new File(Path.FILE_STORE, fname);
+		if(f.exists()) f.delete();
+		
+		response.sendRedirect("file.do");
 	}
 }
