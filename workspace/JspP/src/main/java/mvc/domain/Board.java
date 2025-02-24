@@ -8,16 +8,24 @@ public class Board {
 	private String email;
 	private String subject;
 	private String content;
+	private String fname;
+	private String ofname;
+	private int fsize;
 	private Date rdate;
 	
 	public Board() {}
 
-	public Board(long seq, String writer, String email, String subject, String content, Date rdate) {
+	public Board(long seq, String writer, String email, String subject, String content, String fname, String ofname,
+			int fsize, Date rdate) {
+		super();
 		this.seq = seq;
 		this.writer = writer;
 		this.email = email;
 		this.subject = subject;
 		this.content = content;
+		this.fname = fname;
+		this.ofname = ofname;
+		this.fsize = fsize;
 		this.rdate = rdate;
 	}
 
@@ -61,6 +69,30 @@ public class Board {
 		this.content = content;
 	}
 
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getOfname() {
+		return ofname;
+	}
+
+	public void setOfname(String ofname) {
+		this.ofname = ofname;
+	}
+
+	public int getFsize() {
+		return fsize;
+	}
+
+	public void setFsize(int fsize) {
+		this.fsize = fsize;
+	}
+
 	public Date getRdate() {
 		return rdate;
 	}
@@ -68,6 +100,6 @@ public class Board {
 	public void setRdate(Date rdate) {
 		this.rdate = rdate;
 	}
-	
+
 	
 }

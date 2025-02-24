@@ -25,13 +25,13 @@
 
 <c:set var="board" value="${board}"/>
   
-  <form name="f" method="post" action="brd.do?m=update">
+  <form name="f" method="post" action="brd.do?m=update" enctype="multipart/form-data">
     <input type="hidden" name="seq" value="${board.seq}" />
     <input type="hidden" name="writer" value="${board.writer}" />
     <table border="1" width="600" align="center" cellpadding="3" cellspacing="1">
       <tr>
         <td width="30%" align="center">글쓴이</td>
-        <td align="center"><input type="text" name="aa" size="60" value="${board.email}" disabled></td>
+        <td align="center"><input type="text" name="aa" size="60" value="${board.writer}" disabled></td>
       </tr>
       <tr>
         <td width="30%" align="center">이메일</td>
@@ -44,6 +44,16 @@
       <tr>
         <td width="30%" align="center">글내용</td>
         <td align="center"><textarea name="content" rows="5" cols="53">${board.content}</textarea></td>
+      </tr>
+      <tr>
+        <td width="30%" align="center">첨부파일</td>
+        <td align="center">
+        	<input type="file" name="fname" size="60" value="${board.fname}">
+        	<span>${board.fname}</span>
+        </td>
+        <input type="hidden" name="fname" value="${board.fname}">
+        <input type="hidden" name="ofname" value="${board.ofname}">
+        <input type="hidden" name="fsize" value="${board.fsize}">
       </tr>
       <tr>
         <td colspan="2" align="center">

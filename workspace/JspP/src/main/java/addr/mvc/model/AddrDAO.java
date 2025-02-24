@@ -104,4 +104,70 @@ class AddrDAO {
 			}catch(SQLException se){}
 		}
 	}
+	
+	//for Ajax
+	Address selectBySeq(long seq) {
+		Connection con = null;
+		String sql = SELECT_BY_SEQ;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try{
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setLong(1, seq);
+			rs = pstmt.executeQuery();
+			if(rs.next()){
+				//long seq = rs.getLong(1);
+				String name = rs.getString(2);
+				String addr = rs.getString(3);
+				Date rdate = rs.getDate(4);
+				
+				return new Address(seq, name, addr, rdate);
+			}else {
+				return null;
+			}
+		}catch(SQLException se){
+			System.out.println("list se: "+ se);
+			return null;
+		}finally{
+			try{
+				rs.close();
+				pstmt.close();
+				con.close();
+			}catch(SQLException se){}
+		}
+	}
+	
+	ArrayList<Address> selectByName(String na){
+		ArrayList<Address> list = new ArrayList<>();
+		String sql = SELECT_BY_NAME;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try{
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, "%"+na+"%");
+			rs = pstmt.executeQuery();
+			while(rs.next()){
+				long seq = rs.getLong(1);
+				String name = rs.getString(2);
+				String addr = rs.getString(3);
+				Date rdate = rs.getDate(4);
+				
+				list.add(new Address(seq, name, addr, rdate));
+			}
+			return list;
+		}catch(SQLException se){
+			System.out.println("list se: "+ se);
+			return null;
+		}finally{
+			try{
+				rs.close();
+				pstmt.close();
+				con.close();
+			}catch(SQLException se){}
+		}
+	}
 }

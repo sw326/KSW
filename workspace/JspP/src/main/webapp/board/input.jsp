@@ -8,7 +8,10 @@
     <script language="javascript">
       function check() {
         for (var i = 0; i < document.input.elements.length; i++) {
-          if (document.input.elements[i].value == '') {
+        	if (document.input.elements[i].type === 'file') {
+                continue;
+            }
+          	if (document.input.elements[i].value == '') {
             alert('모든 값을 입력 하셔야 합니다. ');
             return false;
           }
@@ -39,7 +42,7 @@
       <a href="brd.do">글목록</a>
       <hr width="600" size="2" noshade />
     </center>
-    <form name="input" method="post" action="brd.do?m=insert">
+    <form name="input" method="post" action="brd.do?m=insert"  enctype="multipart/form-data">
       <table
         border="1"
         width="600"
@@ -65,6 +68,10 @@
             <textarea name="content" rows="5" cols="53"></textarea>
           </td>
         </tr>
+        <tr>
+          <td align="center">첨부파일</td>
+		  <td align="center"><input type="file" name="fname" size="60"></td>
+		</tr>
         <tr>
           <td colspan="2" align="center">
             <input type="button" value="전송" onclick="check()" />

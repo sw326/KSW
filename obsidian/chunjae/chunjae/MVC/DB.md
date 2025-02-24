@@ -26,7 +26,8 @@ CREATE TABLE BOARD (
    WRITER VARCHAR(15), 
    EMAIL VARCHAR(20),
    SUBJECT VARCHAR(20), 
-   CONTENT VARCHAR(20), 
+   CONTENT VARCHAR(20),
+   
    RDATE DATETIME DEFAULT CURRENT_TIMESTAMP
 ); 
 
@@ -47,4 +48,35 @@ SELECT * FROM BOARD ORDER BY SEQ DESC;
 --ALTER TABLE BOARD
 --    ADD COLUMN FNAME VARCHAR(30) DEFAULT '' AFTER CONTENT,
 --    ADD COLUMN OFNAME VARCHAR(30) DEFAULT '' AFTER FNAME;
+```
+
+
+## ADDRESS File
+```sql
+alter table ADDRESS 
+add column FNAME varchar(30) default '' after ADDR, 
+add column OFNAME varchar(30) default '' after FNAME, 
+add column FSIZE int default 0 after OFNAME; 
+
+alter table ADDRESS drop column FNAME; 
+alter table ADDRESS drop column OFNAME; 
+alter table ADDRESS drop column FSIZE;
+```
+
+## BOARD File
+```sql
+alter table BOARD 
+add column FNAME varchar(30) default '' after CONTENT, 
+add column OFNAME varchar(30) default '' after FNAME, 
+add column FSIZE int default 0 after OFNAME; 
+
+alter table BOARD drop column FNAME; 
+alter table BOARD drop column OFNAME; 
+alter table BOARD drop column FSIZE;
+```
+
+
+## FILE
+```sql
+-- create table FILE( 다수 파일 )
 ```

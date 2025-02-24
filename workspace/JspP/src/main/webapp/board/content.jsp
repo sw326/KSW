@@ -46,6 +46,16 @@
       <td align="center">글내용</td>
       <td>${board.content}</td>
     </tr>
+    <tr>
+      <td align="center">첨부파일</td>
+      <td>
+      <a href="brd.do?m=download&seq=${board.seq}">${board.fname}</a>
+      <c:if test="${not empty board.fname}">
+            <br><br>
+            <img src="brd.do?m=download&seq=${board.seq}" style="max-width: 500px;">
+        </c:if>
+      </td>
+    </tr>
   </table>
   <hr width="600" size="2" noshade />
   <b>

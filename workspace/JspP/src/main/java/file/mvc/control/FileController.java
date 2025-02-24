@@ -10,6 +10,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.OutputStream;
 import java.io.IOException;
 import java.util.Collection;
 
@@ -37,6 +39,8 @@ public class FileController extends HttpServlet {
 				case "upload_mt": upload_mt(request, response); break;
 				case "list": list(request, response); break;
 				case "del": del(request, response); break;
+				case "download": download(request, response); break;
+				default: response.sendRedirect("file.do");
 			}
 		}else {
 			list(request, response); 
@@ -52,12 +56,7 @@ public class FileController extends HttpServlet {
 		Part filePart = request.getPart("file");
 		
 		FileService serivce = FileService.getInstance();
-		boolean flag = serivce.saveFile(filePart);
-		if(flag) {
-			System.out.println("업로드 성공");
-		}else {
-			System.out.println("업로드 실패");
-		}
+		serivce.saveFile(filePart);
 			
 		//String contextPath = this.getServletContext().getRealPath("");
 		//System.out.println("contextPath: " + contextPath);
@@ -76,7 +75,7 @@ public class FileController extends HttpServlet {
 
 		Collection<Part> col = request.getParts();
 		for(Part filePart: col) {
-			boolean flag = serivce.saveFile(filePart);
+			serivce.saveFile(filePart);
 			//if(flag) System.out.println("업로드 성공");
 			//else System.out.println("업로드 실패");
 		}
@@ -104,6 +103,17 @@ public class FileController extends HttpServlet {
 		String fname = request.getParameter("fname");
 		File f = new File(Path.FILE_STORE, fname);
 		if(f.exists()) f.delete();
+		
+		response.sendRedirect("file.do");
+	}
+	
+	private void download(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		String fname = request.getParameter("fname");
+		File file = new File(Path.FILE_STORE, fname);
+		
+		FileService service = FileService.getInstance();
+		service.download(request, response, file);
 		
 		response.sendRedirect("file.do");
 	}

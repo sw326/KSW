@@ -3,9 +3,9 @@
 
 <script>
     if(${flag}){
-		alert("성공(with MVC) with JSTL+EL");
+		alert("성공(with MVC)");
 	}else{
-		alert("실패(with MVC) with JSTL+EL");
+		alert("실패(with MVC)");
 	}
 	location.href="brd.do";
 </script>

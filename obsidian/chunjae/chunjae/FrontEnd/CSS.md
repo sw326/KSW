@@ -59,7 +59,7 @@
 	(4) 'display: flex'
 		1) 'box속성' 테스트
 			<1> Emmet
-				div.container>div.item.item${$}*10
+				div.container>div.item.item`${$}*10`
 				+ 탭 
 
 			<2> 결과 

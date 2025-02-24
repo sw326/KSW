@@ -2,6 +2,7 @@ package board.mvc.model;
 
 import java.util.ArrayList;
 
+import jakarta.servlet.http.Part;
 import mvc.domain.Board;
 
 public class BrdService {
@@ -17,8 +18,13 @@ public class BrdService {
 		return instance;
 	}
 	
-	public ArrayList<Board> listS(){
-		return dao.list();
+	public ArrayList<Board> listS(int page, int pageSize){
+		System.out.println(page+" "+pageSize);
+		return dao.list(page, pageSize);
+	}
+	
+	public int getTotalRecords() {
+		return dao.getTotalRecords();
 	}
 	
 	public boolean insertS(Board board) {
@@ -33,7 +39,7 @@ public class BrdService {
 		return dao.delete(seq);
 	}
 	
-	public boolean updateS(Board board) {
-		return dao.update(board);
+	public boolean updateS(Board board, Part filePart) {
+		return dao.update(board, filePart);
 	}
 }
